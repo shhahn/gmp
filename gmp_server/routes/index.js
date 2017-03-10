@@ -5,5 +5,5 @@
 exports.index = function(req, res){
   //res.render('index', { title: 'Express' });
 	
-	res.send('login 화면');
+	res.render('login', {title : "login 화면"});
 };

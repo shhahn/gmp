@@ -5,6 +5,10 @@ var routes = require('./routes');
 var user = require('./routes/user');
 var chat = require('./routes/chat');
 
+app.set('views', __dirname + '/views');
+app.set('view engine', 'ejs');
+app.engine('html', require('ejs').renderFile);
+
 app.get('/', routes.index);
 app.get('/user/join', user.join);
 app.get('/chat/list', chat.list);
