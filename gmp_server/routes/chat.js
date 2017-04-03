@@ -1,6 +1,6 @@
 exports.list = function(req, res){
 
-	res.render('chat/login', {list : "채팅방 리스트 화면"});
+	res.render('chat/list', {title : "채팅방 리스트 화면"});
 };
 
 exports.create = function(req, res){

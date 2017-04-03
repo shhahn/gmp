@@ -5,6 +5,8 @@ var routes = require('./routes');
 var user = require('./routes/user');
 var chat = require('./routes/chat');
 
+app.use(express.static(__dirname + '/public'));
+
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 app.engine('html', require('ejs').renderFile);
